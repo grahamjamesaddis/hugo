@@ -22,6 +22,9 @@ matrix:
     go: tip
 
 install:
+  - env
+  - pwd
+  - find * -type d
   - mkdir -p $HOME/src
   - mv $TRAVIS_BUILD_DIR $HOME/src
   - export TRAVIS_BUILD_DIR=$HOME/src/hugo
